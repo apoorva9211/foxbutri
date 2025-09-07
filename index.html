@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="hi" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Foxbutri – Premium Makhana (Lotus Seeds)</title>
+  <meta name="description" content="Foxbutri – roasted & flavoured makhana. High‑protein, gluten‑free, light & tasty snacks for every mood.">
+  <link rel="icon" href="/favicon.ico">
+
+  <!-- Open Graph / SEO -->
+  <meta property="og:title" content="Foxbutri – Premium Makhana">
+  <meta property="og:description" content="Roasted & flavoured makhana. Healthy, crunchy, delicious.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.foxbutri.example/">
+  <meta property="og:image" content="https://www.foxbutri.example/og-cover.jpg">
+
+  <!-- Fonts (optional, remove if hosting locally) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Minimal, clean CSS inside the file. If you prefer external, move to index.css and remove <style>. -->
+  <style>
+    :root{
+      --bg:#0f172a; /* slate-900 */
+      --card:#111827; /* gray-900 */
+      --muted:#94a3b8; /* slate-400 */
+      --text:#e5e7eb; /* gray-200 */
+      --brand:#22c55e; /* green-500 */
+      --brand-2:#a7f3d0; /* green-200 */
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";background:var(--bg);color:var(--text)}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1120px;margin-inline:auto;padding:0 1rem}
+    header{position:sticky;top:0;background:rgba(15,23,42,.7);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid #1f2937;z-index:10}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:0.9rem 0}
+    .brand{display:flex;gap:.6rem;align-items:center;font-weight:800;letter-spacing:.3px}
+    .brand__logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--brand),#16a34a);display:grid;place-items:center;color:#06240f;font-weight:800}
+    .nav__links{display:flex;gap:1rem}
+    .nav__links a{padding:.5rem .75rem;border-radius:12px;color:var(--muted)}
+    .nav__links a:hover{background:#111827;color:#d1fae5}
+    .cta{display:inline-flex;align-items:center;gap:.5rem;background:var(--brand);color:#052e14;padding:.7rem 1rem;border-radius:14px;font-weight:700}
+    .cta:hover{filter:brightness(1.05)}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center;padding:3.5rem 0}
+    .eyebrow{display:inline-block;padding:.25rem .6rem;border:1px solid #1f2937;border-radius:999px;color:var(--brand-2);font-size:.85rem;margin-bottom:.8rem}
+    h1{font-size:clamp(2rem,3.8vw,3.5rem);line-height:1.1;margin:0 0 .75rem}
+    .lead{color:var(--muted);font-size:1.05rem;max-width:60ch}
+    .hero__actions{display:flex;gap:1rem;margin-top:1.2rem;flex-wrap:wrap}
+    .ghost{border:1px solid #1f2937;padding:.7rem 1rem;border-radius:14px;color:#d1d5db}
+
+    /* Sections */
+    section{padding:3rem 0;border-top:1px solid #101826}
+    .section__title{font-size:1.8rem;margin:0 0 .25rem}
+    .section__sub{color:var(--muted);margin:0 0 1.5rem}
+
+    /* USP cards */
+    .grid{display:grid;gap:1rem}
+    .grid.usp{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .card{background:var(--card);border:1px solid #1f2937;border-radius:18px;padding:1rem}
+    .card h3{margin:.2rem 0 .4rem;font-size:1.05rem}
+    .muted{color:var(--muted)}
+
+    /* Products */
+    .products{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .product{overflow:hidden}
+    .product img{border-radius:14px;border:1px solid #1f2937}
+    .price{display:flex;align-items:center;justify-content:space-between;margin-top:.6rem}
+    .price .tag{background:#1a2e22;color:#a7f3d0;padding:.35rem .6rem;border-radius:999px;font-size:.85rem}
+
+    /* Testimonials */
+    blockquote{margin:0;padding:1rem;border-radius:14px;background:#0b1222;border:1px dashed #1f2937}
+    blockquote footer{margin-top:.6rem;color:var(--muted)}
+
+    /* Footer */
+    footer{padding:2rem 0;border-top:1px solid #101826;color:#9ca3af}
+    .footer__grid{display:grid;gap:1rem;grid-template-columns:2fr 1fr 1fr}
+    .copyright{margin-top:1rem;color:#6b7280}
+
+    /* Responsive */
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr}
+      .footer__grid{grid-template-columns:1fr}
+      .nav__links{display:none}
+    }
+  </style>
+
+  <!-- Schema.org JSON-LD (edit with your real links, logo, socials) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Foxbutri",
+    "url": "https://www.foxbutri.example/",
+    "logo": "https://www.foxbutri.example/logo.png",
+    "sameAs": ["https://www.instagram.com/foxbutri", "https://www.facebook.com/foxbutri"]
+  }
+  </script>
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <div class="container nav" role="navigation" aria-label="Main">
+      <a href="#home" class="brand" aria-label="Foxbutri Home">
+        <span class="brand__logo">Fb</span>
+        <span>Foxbutri</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#products">Products</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#flavours">Flavours</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="cta" href="#buy" aria-label="Shop Foxbutri">Buy Now</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home" class="container">
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <span class="eyebrow">100% Roasted • Gluten‑Free • Protein‑Rich</span>
+        <h1 id="hero-title">Foxbutri — Healthy Makhana, Irresistible Crunch.</h1>
+        <p class="lead">Premium lotus seeds, perfectly roasted with clean ingredients. Great for gym, work, ya travel — light on calories, big on flavour.</p>
+        <div class="hero__actions">
+          <a class="cta" href="#products">Explore Products</a>
+          <a class="ghost" href="#story">Our Story</a>
+        </div>
+      </div>
+      <div aria-hidden="true">
+        <!-- Replace with your hero image -->
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1400&auto=format&fit=crop" alt="Bowl of roasted snacks" loading="eager">
+      </div>
+    </section>
+
+    <!-- Benefits / USPs -->
+    <section id="benefits" aria-labelledby="benefits-title">
+      <h2 class="section__title" id="benefits-title">Why Foxbutri?</h2>
+      <p class="section__sub">Clean ingredients. Honest nutrition. Crunch you’ll love.</p>
+      <div class="grid usp">
+        <div class="card"><h3>🥦 High‑Protein</h3><p class="muted">Fuel your day with plant‑based protein.</p></div>
+        <div class="card"><h3>🔥 Roasted, Not Fried</h3><p class="muted">Light on calories, big on taste.</p></div>
+        <div class="card"><h3>🚫 Preservative‑Free</h3><p class="muted">No artificial colours or flavours.</p></div>
+        <div class="card"><h3>🇮🇳 Sourced in India</h3><p class="muted">Locally sourced makhana from trusted farms.</p></div>
+      </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section id="products" aria-labelledby="products-title">
+      <h2 class="section__title" id="products-title">Best‑sellers</h2>
+      <p class="section__sub">Top flavours our customers keep coming back for.</p>
+      <div class="grid products">
+        <article class="card product" aria-labelledby="prod1-title">
+          <img src="https://images.unsplash.com/photo-1604908554027-54af921f13f8?q=80&w=1200&auto=format&fit=crop" alt="Peri Peri flavoured makhana">
+          <h3 id="prod1-title">Peri Peri</h3>
+          <p class="muted">Smoky, spicy and addictive.</p>
+          <div class="price"><span>₹199 / 100g</span><span class="tag">New</span></div>
+        </article>
+        <article class="card product" aria-labelledby="prod2-title">
+          <img src="https://images.unsplash.com/photo-1542326237-94b1c5a538d0?q=80&w=1200&auto=format&fit=crop" alt="Himalayan salt & pepper makhana">
+          <h3 id="prod2-title">Salt & Pepper</h3>
+          <p class="muted">Classic balance — never goes wrong.</p>
+          <div class="price"><span>₹185 / 100g</span><span class="tag">Bestseller</span></div>
+        </article>
+        <article class="card product" aria-labelledby="prod3-title">
+          <img src="https://images.unsplash.com/photo-1548366086-7fb635a415c8?q=80&w=1200&auto=format&fit=crop" alt="Tandoori masala makhana">
+          <h3 id="prod3-title">Tandoori Masala</h3>
+          <p class="muted">Indian spice kick with a gentle roast.</p>
+          <div class="price"><span>₹199 / 100g</span><span class="tag">Hot</span></div>
+        </article>
+        <article class="card product" aria-labelledby="prod4-title">
+          <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=1200&auto=format&fit=crop" alt="Cheese & herbs makhana">
+          <h3 id="prod4-title">Cheese & Herbs</h3>
+          <p class="muted">Creamy notes with herby aroma.</p>
+          <div class="price"><span>₹210 / 100g</span><span class="tag">Limited</span></div>
+        </article>
+      </div>
+      <div style="margin-top:1rem"><a class="cta" href="#buy">See All Flavours</a></div>
+    </section>
+
+    <!-- Flavours / Ingredients -->
+    <section id="flavours" aria-labelledby="flavours-title">
+      <h2 class="section__title" id="flavours-title">Clean Ingredients</h2>
+      <p class="section__sub">Makhana • Rock Salt • Cold‑pressed Oil • Natural Spices</p>
+      <div class="grid usp">
+        <div class="card"><h3>⚖️ Portion Control Packs</h3><p class="muted">Perfect 25g/40g on‑the‑go packs.</p></div>
+        <div class="card"><h3>🧪 Lab Tested</h3><p class="muted">Every batch checked for quality & safety.</p></div>
+        <div class="card"><h3>♻️ Eco Packaging</h3><p class="muted">Recyclable pouches, low ink prints.</p></div>
+        <div class="card"><h3>❄️ Fresh‑lock</h3><p class="muted">Zip‑seal to keep the crunch intact.</p></div>
+      </div>
+    </section>
+
+    <!-- Social Proof / Testimonials -->
+    <section aria-labelledby="reviews-title">
+      <h2 class="section__title" id="reviews-title">Loved by Snackers</h2>
+      <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
+        <blockquote>
+          “Best office snack! Light yet filling. Peri Peri 🔥.”
+          <footer>— Ayesha, Pune</footer>
+        </blockquote>
+        <blockquote>
+          “Crunch is on point and not oily at all.”
+          <footer>— Rohan, Bengaluru</footer>
+        </blockquote>
+        <blockquote>
+          “My gym bag staple. Salt & Pepper FTW.”
+          <footer>— Neha, Delhi</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Story / About -->
+    <section id="about" aria-labelledby="about-title">
+      <h2 class="section__title" id="about-title">Our Story</h2>
+      <p class="section__sub">Built in India, inspired by mindful snacking.</p>
+      <div class="card">
+        <p class="muted">Foxbutri shuru hua ek simple idea se — tasty snacks bina compromise. Hum seed se snack tak har step par dhyaan rakhte hain, taki aapko mile clean, honest aur super‑crunchy makhana.</p>
+      </div>
+    </section>
+
+    <!-- Contact / CTA -->
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 class="section__title" id="contact-title">Wholesale & Queries</h2>
+      <p class="section__sub">Partnerships, bulk orders, ya feedback — we’d love to hear from you.</p>
+      <form class="card" onsubmit="event.preventDefault(); alert('Thanks! We will contact you soon.');" aria-label="Contact form">
+        <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem">
+          <label>
+            <span class="muted">Name</span>
+            <input required name="name" placeholder="Your name" aria-label="Name" style="width:100%;padding:.8rem;border-radius:12px;border:1px solid #1f2937;background:#0b1222;color:#e5e7eb;">
+          </label>
+          <label>
+            <span class="muted">Email</span>
+            <input required type="email" name="email" placeholder="you@example.com" aria-label="Email" style="width:100%;padding:.8rem;border-radius:12px;border:1px solid #1f2937;background:#0b1222;color:#e5e7eb;">
+          </label>
+        </div>
+        <label style="display:block;margin-top:1rem">
+          <span class="muted">Message</span>
+          <textarea name="message" rows="4" placeholder="Tell us what you need…" aria-label="Message" style="width:100%;padding:.8rem;border-radius:12px;border:1px solid #1f2937;background:#0b1222;color:#e5e7eb;"></textarea>
+        </label>
+        <div style="margin-top:1rem"><button class="cta" type="submit">Send</button></div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer__grid">
+      <div>
+        <div class="brand"><span class="brand__logo">Fb</span><span>Foxbutri</span></div>
+        <p class="muted" style="max-width:50ch;margin:.6rem 0 0">Premium roasted makhana, crafted for mindful snacking.</p>
+      </div>
+      <div>
+        <strong>Company</strong>
+        <div style="margin-top:.6rem;display:grid;gap:.35rem">
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a href="#buy">Store</a>
+          <a href="#privacy">Privacy</a>
+        </div>
+      </div>
+      <div>
+        <strong>Follow</strong>
+        <div style="margin-top:.6rem;display:grid;gap:.35rem">
+          <a href="https://instagram.com/foxbutri" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://facebook.com/foxbutri" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://x.com/foxbutri" target="_blank" rel="noopener">X / Twitter</a>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright">© <span id="year"></span> Foxbutri. All rights reserved.</div>
+  </footer>
+
+  <script>
+    // Set dynamic year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
